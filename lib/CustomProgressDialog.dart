@@ -71,7 +71,7 @@ class CustomProgressDialog extends GetxController {
 
   void hide() {
     if (Get.isDialogOpen!) {
-      Get.back();
+      Navigator.of(Get.overlayContext!).pop();
     } else {
       debugPrint('pr is already closed');
     }
